@@ -1,0 +1,58 @@
+name: 'Push to main 🚀'
+
+on:
+  push:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    uses: ./.github/workflows/--test.yml
+    secrets: inherit
+
+  release:
+    runs-on: ubuntu-22.04
+    needs:
+      - test
+    steps:
+      - uses: myparcelnl/actions/setup-git-credentials@v3
+        id: credentials
+        with:
+          app-id: ${{ secrets.MYPARCEL_APP_ID }}
+          private-key: ${{ secrets.MYPARCEL_APP_PRIVATE_KEY }}
+
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - uses: myparcelnl/actions/yarn-install@v3
+        with:
+          node-version: 18
+
+      - uses: myparcelnl/actions/semantic-release@v3
+        with:
+          token: ${{ secrets.GH_REPO_TOKEN }}
+
+  rebase-prs:
+    if: always()
+    needs: release
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: myparcelnl/actions/setup-app-credentials@v3
+        id: credentials
+        with:
+          app-id: ${{ secrets.MYPARCEL_APP_ID }}
+          private-key: ${{ secrets.MYPARCEL_APP_PRIVATE_KEY }}
+
+      - uses: peter-evans/rebase@v2
+        with:
+          token: ${{ steps.credentials.outputs.token }}
+          base: ${{ github.ref_name }}
+          exclude-drafts: true
