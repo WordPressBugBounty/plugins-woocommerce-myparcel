@@ -2,17 +2,17 @@
     "packages": [
         {
             "name": "myparcelnl/sdk",
-            "version": "7.16.0",
-            "version_normalized": "7.16.0.0",
+            "version": "7.16.1",
+            "version_normalized": "7.16.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myparcelnl/sdk.git",
-                "reference": "44ccb0c86c33dc568edda2ed47b19cfae23f91a9"
+                "reference": "192673deba13bcd9d6d014ba0bbaadcad76a0c65"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myparcelnl/sdk/zipball/44ccb0c86c33dc568edda2ed47b19cfae23f91a9",
-                "reference": "44ccb0c86c33dc568edda2ed47b19cfae23f91a9",
+                "url": "https://api.github.com/repos/myparcelnl/sdk/zipball/192673deba13bcd9d6d014ba0bbaadcad76a0c65",
+                "reference": "192673deba13bcd9d6d014ba0bbaadcad76a0c65",
                 "shasum": ""
             },
             "require": {
@@ -23,7 +23,7 @@
                 "phpunit/phpunit": "^7.5.20",
                 "psr/container": "~1.0.0"
             },
-            "time": "2024-09-10T14:43:58+00:00",
+            "time": "2024-09-19T15:10:25+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -63,7 +63,7 @@
             ],
             "support": {
                 "issues": "https://github.com/myparcelnl/sdk/issues",
-                "source": "https://github.com/myparcelnl/sdk/tree/v7.16.0"
+                "source": "https://github.com/myparcelnl/sdk/tree/v7.16.1"
             },
             "install-path": "../myparcelnl/sdk"
         }
