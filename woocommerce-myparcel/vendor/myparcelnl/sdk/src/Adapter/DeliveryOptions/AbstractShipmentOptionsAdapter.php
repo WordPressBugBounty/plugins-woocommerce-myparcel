@@ -13,6 +13,16 @@ abstract class AbstractShipmentOptionsAdapter
     /**
      * @var bool|null
      */
+    protected $receipt_code;
+
+    /**
+     * @var bool|null
+     */
+    protected $collect;
+
+    /**
+     * @var bool|null
+     */
     protected $only_recipient;
 
     /**
@@ -61,6 +71,22 @@ abstract class AbstractShipmentOptionsAdapter
     public function hasSignature(): ?bool
     {
         return $this->signature;
+    }
+
+    /**
+     * @return bool|null
+     */
+    public function hasReceiptCode(): ?bool
+    {
+        return $this->receipt_code;
+    }
+
+    /**
+     * @return bool|null
+     */
+    public function hasCollect(): ?bool
+    {
+        return $this->collect;
     }
 
     /**
@@ -140,7 +166,7 @@ abstract class AbstractShipmentOptionsAdapter
     }
 
     /**
-     * @param  null|bool $signature
+     * @param null|bool $signature
      *
      * @return void
      */
@@ -150,7 +176,27 @@ abstract class AbstractShipmentOptionsAdapter
     }
 
     /**
-     * @param  null|int $insurance
+     * @param bool|null $receiptCode
+     *
+     * @return void
+     */
+    public function setReceiptCode(?bool $receiptCode): void
+    {
+        $this->receipt_code = $receiptCode;
+    }
+
+    /**
+     * @param bool|null $collect
+     *
+     * @return void
+     */
+    public function setCollect(?bool $collect): void
+    {
+        $this->collect = $collect;
+    }
+
+    /**
+     * @param null|int $insurance
      *
      * @return void
      */
@@ -160,7 +206,7 @@ abstract class AbstractShipmentOptionsAdapter
     }
 
     /**
-     * @param  null|bool $ageCheck
+     * @param null|bool $ageCheck
      *
      * @return void
      */
@@ -170,7 +216,7 @@ abstract class AbstractShipmentOptionsAdapter
     }
 
     /**
-     * @param  null|bool $onlyRecipient
+     * @param null|bool $onlyRecipient
      *
      * @return void
      */
@@ -180,7 +226,7 @@ abstract class AbstractShipmentOptionsAdapter
     }
 
     /**
-     * @param  null|bool $return
+     * @param null|bool $return
      *
      * @return void
      */
@@ -190,7 +236,7 @@ abstract class AbstractShipmentOptionsAdapter
     }
 
     /**
-     * @param  null|bool $sameDayDelivery
+     * @param null|bool $sameDayDelivery
      *
      * @return void
      */
@@ -200,7 +246,7 @@ abstract class AbstractShipmentOptionsAdapter
     }
 
     /**
-     * @param  null|bool $hideSender
+     * @param null|bool $hideSender
      *
      * @return void
      */
@@ -210,7 +256,7 @@ abstract class AbstractShipmentOptionsAdapter
     }
 
     /**
-     * @param  null|bool $largeFormat
+     * @param null|bool $largeFormat
      *
      * @return void
      */
@@ -220,7 +266,7 @@ abstract class AbstractShipmentOptionsAdapter
     }
 
     /**
-     * @param  null|bool $extraAssurance
+     * @param null|bool $extraAssurance
      *
      * @return void
      */
@@ -236,6 +282,8 @@ abstract class AbstractShipmentOptionsAdapter
     {
         return [
             'signature'         => $this->hasSignature(),
+            'collect'           => $this->hasCollect(),
+            'receipt_code'      => $this->hasReceiptCode(),
             'insurance'         => $this->getInsurance(),
             'age_check'         => $this->hasAgeCheck(),
             'only_recipient'    => $this->hasOnlyRecipient(),

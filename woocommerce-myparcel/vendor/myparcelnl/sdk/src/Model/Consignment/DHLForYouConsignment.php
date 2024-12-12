@@ -38,6 +38,14 @@ class DHLForYouConsignment extends AbstractConsignment
         return [
             self::PACKAGE_TYPE_PACKAGE_NAME,
             self::PACKAGE_TYPE_MAILBOX_NAME,
+            self::PACKAGE_TYPE_PACKAGE_SMALL_NAME,
+        ];
+    }
+
+    public function getAllowedExtraOptions(): array
+    {
+        return [
+            self::EXTRA_OPTION_DELIVERY_SATURDAY,
         ];
     }
 

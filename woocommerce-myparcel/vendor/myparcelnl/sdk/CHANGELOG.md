@@ -3,6 +3,53 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.20.0](https://github.com/myparcelnl/sdk/compare/v7.19.0...v7.20.0) (2024-11-15)
+
+
+### :sparkles: New Features
+
+* Allow saturday delivery for DHLForYou ([#510](https://github.com/myparcelnl/sdk/issues/510)) ([f33483e](https://github.com/myparcelnl/sdk/commit/f33483e804a168801a8dcb4a47b8a82163d13bf3))
+
+## [7.19.0](https://github.com/myparcelnl/sdk/compare/v7.18.1...v7.19.0) (2024-11-14)
+
+
+### :sparkles: New Features
+
+* **carriers:** add ups shipping options ([#509](https://github.com/myparcelnl/sdk/issues/509)) ([dbaf617](https://github.com/myparcelnl/sdk/commit/dbaf6176f7a1b34e405e63ad9b14a67facf3787f))
+
+## [7.18.1](https://github.com/myparcelnl/sdk/compare/v7.18.0...v7.18.1) (2024-11-07)
+
+
+### :bug: Bug Fixes
+
+* support capital letters in box number detection ([#508](https://github.com/myparcelnl/sdk/issues/508)) ([98d4a0d](https://github.com/myparcelnl/sdk/commit/98d4a0de33808225ee7a6a1a96212a3334aeaa45))
+
+## [7.18.0](https://github.com/myparcelnl/sdk/compare/v7.17.0...v7.18.0) (2024-10-23)
+
+
+### :bug: Bug Fixes
+
+* comment out default weight in BpostConsignment model ([#499](https://github.com/myparcelnl/sdk/issues/499)) ([1e01ce2](https://github.com/myparcelnl/sdk/commit/1e01ce272874af419a69e2ba20d6a3ed36b51ea2))
+
+
+### :sparkles: New Features
+
+* add receipt code ([#507](https://github.com/myparcelnl/sdk/issues/507)) ([e794021](https://github.com/myparcelnl/sdk/commit/e794021b4bdbcc553c29627bb95f3947386de4e3))
+
+## [7.17.0](https://github.com/myparcelnl/sdk/compare/v7.16.2...v7.17.0) (2024-09-30)
+
+
+### :sparkles: New Features
+
+* allow small package with DHLForYou ([#506](https://github.com/myparcelnl/sdk/issues/506)) ([43b9694](https://github.com/myparcelnl/sdk/commit/43b96946831e59877d45d3004871bf7dfe51b352))
+
+## [7.16.2](https://github.com/myparcelnl/sdk/compare/v7.16.1...v7.16.2) (2024-09-24)
+
+
+### :bug: Bug Fixes
+
+* **export:** export addresses consistently ([#502](https://github.com/myparcelnl/sdk/issues/502)) ([049a1ac](https://github.com/myparcelnl/sdk/commit/049a1ac5e948bcbb10bd09804eacfbd5e48a12df))
+
 ## [7.16.1](https://github.com/myparcelnl/sdk/compare/v7.16.0...v7.16.1) (2024-09-19)
 
 
