@@ -1,8 +1,8 @@
 <?php return array(
     'root' => array(
         'name' => 'myparcelnl/woocommerce',
-        'pretty_version' => '4.24.2',
-        'version' => '4.24.2.0',
+        'pretty_version' => '4.24.3',
+        'version' => '4.24.3.0',
         'reference' => null,
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
@@ -20,8 +20,8 @@
             'dev_requirement' => false,
         ),
         'myparcelnl/woocommerce' => array(
-            'pretty_version' => '4.24.2',
-            'version' => '4.24.2.0',
+            'pretty_version' => '4.24.3',
+            'version' => '4.24.3.0',
             'reference' => null,
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
