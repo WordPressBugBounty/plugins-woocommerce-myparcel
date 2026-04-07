@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.22.1](https://github.com/myparcelnl/sdk/compare/v7.22.0...v7.22.1) (2025-02-18)
+
+
+### :bug: Bug Fixes
+
+* allow leading zero for hs code classification ([#522](https://github.com/myparcelnl/sdk/issues/522)) ([604773f](https://github.com/myparcelnl/sdk/commit/604773f1fcbbc5b6d4803db1183bbf8eba964bb8))
+
+## [7.22.0](https://github.com/myparcelnl/sdk/compare/v7.21.0...v7.22.0) (2025-01-15)
+
+
+### :sparkles: New Features
+
+* allow sender with feature header ([#517](https://github.com/myparcelnl/sdk/issues/517)) ([ce6d623](https://github.com/myparcelnl/sdk/commit/ce6d623e808fceac04941d8102bae2e768086fb6))
+
+## [7.21.0](https://github.com/myparcelnl/sdk/compare/v7.20.1...v7.21.0) (2025-01-02)
+
+
+### :sparkles: New Features
+
+* throw relevant error when no pdfs are received ([#516](https://github.com/myparcelnl/sdk/issues/516)) ([35ac23a](https://github.com/myparcelnl/sdk/commit/35ac23a978a7ad9774eaa7d419087363eed889e7))
+
+## [7.20.1](https://github.com/myparcelnl/sdk/compare/v7.20.0...v7.20.1) (2024-12-20)
+
+
+### :bug: Bug Fixes
+
+* allow ark3 as number suffix ([#515](https://github.com/myparcelnl/sdk/issues/515)) ([acf1b2e](https://github.com/myparcelnl/sdk/commit/acf1b2ef4ca3c3127189ddb908a06ab293d40bd2))
+
 ## [7.20.0](https://github.com/myparcelnl/sdk/compare/v7.19.0...v7.20.0) (2024-11-15)
 
 

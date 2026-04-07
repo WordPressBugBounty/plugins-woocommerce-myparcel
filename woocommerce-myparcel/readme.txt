@@ -1,9 +1,9 @@
 === MyParcel ===
-Contributors: richardperdaan, joerimyparcel, myparcelsupport
+Contributors: richardperdaan, joerimyparcel
 Tags: woocommerce, delivery, packages, myparcel, shipping
 Requires at least: 5.2.0
-Tested up to: 6.7
-Stable tag: 4.24.3
+Tested up to: 7.0
+Stable tag: 4.25.1
 Requires PHP: 7.1
 License: GPLv3 or later
 License URI: http://www.opensource.org/licenses/gpl-license.php
@@ -103,11 +103,28 @@ function wcmyparcel_new_email_text($track_trace_tekst) {
 
 == Changelog ==
 
+= 4.25.1 (2026-04-07) =
+
+* Fixed bug: export shipment with weight (#1594)
+
+= 4.25.0 (2025-03-04) =
+
+* New: add receipt code for WooCommerce v4 (#1261)
+* New: add filter before consignment export (#1222)
+
+= 4.24.4 (2025-01-09) =
+
+* Fixed bug: fix small package not showing in delivery options (#1167)
+
 = 4.24.2 (2024-12-12) =
 
 * Fixed bug: prevent reflected XSS
 
 = 4.24.1 (2024-09-20) =
+
+* Fixed bug: allow dhl for you export with default volume properties
+
+= 4.24.1-rc.1 (2024-09-20) =
 
 * Fixed bug: allow dhl for you export with default volume properties
 
@@ -117,7 +134,19 @@ function wcmyparcel_new_email_text($track_trace_tekst) {
 * Fixed bug: fix small parcel in the Delivery Options (#1165)
 * Fixed bug: prevent warning undefined array key (#1122)
 
+= 4.23.1-rc.2 (2024-09-16) =
+
+* Fixed bug: fix small parcel in the Delivery Options (#1165)
+
+= 4.23.1-rc.1 (2024-07-04) =
+
+* Fixed bug: prevent warning undefined array key (#1122)
+
 = 4.23.0 (2024-06-11) =
+
+* New: add hpos incompatibility warning (#1109)
+
+= 4.23.0-rc.1 (2024-06-11) =
 
 * New: add hpos incompatibility warning (#1109)
 
@@ -128,7 +157,27 @@ function wcmyparcel_new_email_text($track_trace_tekst) {
 * Fixed bug: use correct url for foreign shipments (#1088)
 * Fixed bug: fix item value on customs declaration (#1066)
 
+= 4.22.2-rc.4 (2024-04-22) =
+
+* Fixed bug: fix myparcel div not found (#1091)
+
+= 4.22.2-rc.3 (2024-04-19) =
+
+* Fixed bug: restore compatibility with wooc table rate (#1090)
+
+= 4.22.2-rc.2 (2024-04-12) =
+
+* Fixed bug: use correct url for foreign shipments (#1088)
+
+= 4.22.2-rc.1 (2024-02-28) =
+
+* Fixed bug: fix item value on customs declaration (#1066)
+
 = 4.22.1 (2024-01-02) =
+
+* Fixed bug: compare versions for upgrade or install (#1063)
+
+= 4.22.1-rc.1 (2024-01-02) =
 
 * Fixed bug: compare versions for upgrade or install (#1063)
 
@@ -136,6 +185,20 @@ function wcmyparcel_new_email_text($track_trace_tekst) {
 
 * New: change digital stamp weight range (#1061)
 * Fixed bug: conform to minimum item value of api (#991)
+* Fixed bug: do not confirm delivery for virtual orders (#987)
+
+= 4.22.0-rc.1 (2024-01-02) =
+
+* New: change digital stamp weight range (#1061)
+* Fixed bug: conform to minimum item value of api (#991)
+* Fixed bug: do not confirm delivery for virtual orders (#987)
+
+= 4.21.1-rc.2 (2023-08-10) =
+
+* Fixed bug: conform to minimum item value of api (#991)
+
+= 4.21.1-rc.1 (2023-08-10) =
+
 * Fixed bug: do not confirm delivery for virtual orders (#987)
 
 = 4.21.0 (2023-07-31) =
@@ -158,6 +221,11 @@ function wcmyparcel_new_email_text($track_trace_tekst) {
 
 * Fixed bug: fix showing address errors before address is filled in (#976)
 
+= 4.19.1-rc.1 (2023-05-01) =
+
+* Fixed bug: fix showing address errors before address is filled in (#976)
+* Fixed bug: fix billing address is required error in checkout (#970)
+
 = 4.19.1 (2023-04-13) =
 
 * Fixed bug: fix billing address is required error in checkout (#970)
@@ -166,6 +234,19 @@ function wcmyparcel_new_email_text($track_trace_tekst) {
 
 * New: add barcode to fulfilment orders (#966)
 * Fixed bug: default to postnl when carrier id is invalid (#972)
+
+= 4.19.0-rc.1 (2023-04-11) =
+
+* New: add barcode to fulfilment orders (#966)
+* Fixed bug: default to postnl when carrier id is invalid (#972)
+
+= 4.19.0-rc.2 (2023-04-11) =
+
+* Fixed bug: default to postnl when carrier id is invalid (#972)
+
+= 4.19.0-rc.1 (2023-04-11) =
+
+* New: add barcode to fulfilment orders (#966)
 
 = 4.18.8 (2023-04-11) =
 
@@ -178,9 +259,26 @@ function wcmyparcel_new_email_text($track_trace_tekst) {
 * Fixed bug: do not show address inputs when allowRetry is false (#967)
 * Fixed bug: fix absent version in svn release script (#964)
 
+= 4.18.7-rc.3 (2023-04-06) =
+
+* Fixed bug: prevent passing unknown carrier id (#969)
+
+= 4.18.7-rc.2 (2023-04-04) =
+
+* Fixed bug: prevent carrier 5 error when retrieving account settings (#968)
+
+= 4.18.7-rc.1 (2023-04-04) =
+
+* Fixed bug: do not show address inputs when allowRetry is false (#967)
+* Fixed bug: fix absent version in svn release script (#964)
+
 = 4.18.6 (2023-03-17) =
 
 * Fixed bug: allow delivery options with partial address (#963)
+* Fixed bug: prevent javascript errors on order-pay (#961)
+
+= 4.18.6-rc.1 (2023-03-16) =
+
 * Fixed bug: prevent javascript errors on order-pay (#961)
 
 = 4.18.5 (2023-03-10) =
@@ -199,6 +297,10 @@ function wcmyparcel_new_email_text($track_trace_tekst) {
 
 * Fixed bug: change the return type of getTimestamp to match with the parent (#958)
 
+= 4.18.2-rc.1 (2023-03-09) =
+
+* Fixed bug: change the return type of getTimestamp to match with the parent (#958)
+
 = 4.18.1 (2023-03-09) =
 
 * Fixed bug: fix delivery options for dhl parcelconnect and dhl europlus (#957)
@@ -206,6 +308,10 @@ function wcmyparcel_new_email_text($track_trace_tekst) {
 = 4.18.0 (2023-03-01) =
 
 * New: add carrier dhl europlus and dhl parcelconnect (#955)
+* Fixed bug: close inline style properly (#954)
+
+= 4.17.1-rc.1 (2023-02-21) =
+
 * Fixed bug: close inline style properly (#954)
 
 = 4.17.0 (2023-02-21) =
@@ -218,6 +324,43 @@ function wcmyparcel_new_email_text($track_trace_tekst) {
 * Fixed bug: prevent widget config errors (#947)
 * Fixed bug: fix belgian number suffix (#923)
 * Fixed bug: delete address not found prompt from checkout (#946)
+* Fixed bug: prevent undefined array keys (#933)
+
+= 4.17.0-rc.7 (2023-02-20) =
+
+* Fixed bug: pass cc argument to insurance function (#953)
+
+= 4.17.0-rc.6 (2023-02-16) =
+
+* Fixed bug: fix type error in getting value of option (#952)
+
+= 4.17.0-rc.5 (2023-02-03) =
+
+* Fixed bug: only read shipping class term when available (#951)
+
+= 4.17.0-rc.4 (2023-01-25) =
+
+* Fixed bug: prevent type error in flat rate evaluate cost (#949)
+
+= 4.17.0-rc.3 (2023-01-12) =
+
+* Fixed bug: prevent widget config errors (#947)
+
+= 4.17.0-rc.2 (2023-01-11) =
+
+* Fixed bug: fix belgian number suffix (#923)
+
+= 4.17.0-rc.1 (2023-01-09) =
+
+* New: add customizable string for address not found (#945)
+* Fixed bug: delete address not found prompt from checkout (#946)
+
+= 4.16.5-rc.1 (2023-01-09) =
+
+* Fixed bug: prevent undefined array keys (#933)
+
+= 4.16.5-develop.1 (2023-01-09) =
+
 * Fixed bug: prevent undefined array keys (#933)
 
 = 4.16.4 (2023-01-05) =
@@ -246,6 +389,21 @@ function wcmyparcel_new_email_text($track_trace_tekst) {
 * Fixed bug: fix exclude billing with digital download (#930)
 * Fixed bug: prevent error substr expects parameter 1 to be string (#927)
 * Fixed bug: always load account settings during upgrade (#916)
+
+= 4.16.0-rc.2 (2022-12-20) =
+
+* Fixed bug: fix deprecation warning on belgian shipments (#929)
+* Fixed bug: fix exclude billing with digital download (#930)
+* Fixed bug: prevent error substr expects parameter 1 to be string (#927)
+
+= 4.16.0-rc.1 (2022-12-07) =
+
+* New: add carrier dhl (#913)
+
+= 4.15.3-rc.1 (2022-12-07) =
+
+* Fixed bug: always load account settings during upgrade (#916)
+
 = 4.15.2 (2022-12-06) =
 
 * Fixed bug: provide correct version to svn deploy (#919)
@@ -696,6 +854,296 @@ These are the biggest changes:
 * Fix: The default settings
 * Improvement: The option to change the position of the checkout (edited)
 
+= 3.0.0-beta.2 (2018-09-08) =
+* Fix: at home delivery title
+* Fix: Export Belgium delivery, use the street/number input fields
+
+= 2.4.14 (2018-07-03) =
+* Fix: Select the correct package type inside admin when there is one shipping used.
+
+= 2.4.13 (2018-07-26) =
+* Fix: Tabel rate shipping witch WooCommerce Table Rate Shipping by Automattic / Bolder Elements 4.0 / Bolder Elements 4.1.3
+* Fix: The option to show the checkout only when he is linked to package
+
+= 2.4.12 (2018-07-09) =
+* Fix: #102 change Iceland to world shipping
+* Fix: #106 tabel rates shipping
+* Improvement: #94 support legacy consignment and tracktrace data
+* Improvement: #95 Speed up order list view
+* Improvement: #104 Add reference identifier, that is always the order id
+= 2.4.11 (2018-04-30) =
+* Fix: Export shipment labels
+
+= 2.4.10 (2018-04-26) =
+* Improvement: Support Effect Connect, you can place the barcode inside a note of the order
+
+= 2.4.9 (2018-04-03) =
+* Fix: Scrolling when changing package type in orderview
+* Fix: Select the correct delivery methode inside the checkout
+* Improvement: Support Cloudflare
+
+= 2.4.8 (2018-02-27) =
+* Fix: The array error from the userAgent (https://wordpress.org/support/topic/parse-error-syntax-error-unexpected-in-wp-content-plugins-woocommerce-mypa/)
+* Fix: The countries Norway, Turkey, Switzerland changed to world country
+* Fix: Changing Type from Order List (https://wordpress.org/support/topic/changing-type-from-order-list/#post-10020043)
+
+= 2.4.7 (2018-02-07) =
+* Improvement: WooCommerce 3.3.1 compatibility
+
+= 2.4.6 (2018-02-01) =
+* Improvement: WooCommerce 3.3 compatibility
+* Feature: The option to print the label on A4 and A6 format
+
+= 2.4.5 (2018-01-10) =
+* Fix: Export an order with an old delivery date
+* Refactor: Error about rest api (https://wordpress.org/support/topic/error-in-woocommerce/)
+                  ```des/class-wcmp-rest-api-integration.php): failed to open stream```
+
+= 2.4.4 (2018-01-09) =
+* Fix:Error about rest api (https://wordpress.org/support/topic/error-in-woocommerce/)
+      ```des/class-wcmp-rest-api-integration.php): failed to open stream```
+
+= 2.4.3 (2018-01-05) =
+* Fix: Add MyParcel fields to REST api to create order request
+* Fix: Hide days when the pickup delivery is selected
+
+= 2.4.2 (2017-10-29) =
+* Fix: Price changes for 2018
+
+
+= 2.4.1 (2017-10-12) =
+* Fix: WooCommerce 3.2 compatibility
+
+= 2.4.0 (2017-09-25) =
+* Feature: Export world shipments + customs declaration form
+* Feature: Show delivery options on thank you page
+* Feature: Use WC logger when possible
+* Fix: Return shipment error
+* Fix: Order details layout for pickup location
+* Fix: Delete cache of admin notices
+* Fix: Display of negative delivery options price
+* Fix: Improved tax handling on delivery options fees
+
+= 2.3.3 (2017-06-27) =
+* Fix: Pickup locations in Safari
+
+= 2.3.2 (2017-06-26) =
+* Fix: Delivery options header order
+* Feature: Support for region (=state) in international addresses
+* Feature: Hide Delivery options if PostNL service is unavailable
+
+= 2.3.1 (2017-06-12) =
+* Fix: Table Rate Shipping + WooCommerce 2.6 (error in settings)
+
+= 2.3.0 (2017-06-12) =
+* Feature: WooCommerce Table Rate Shipping support (woocommerce.com & Bolder Elements 4.0)
+* Feature: Support for monday delivery
+* Feature: Start print position
+* Feature: Individual label printing from the order details page
+* Fix: Delivery options checkout in Edge browser
+* Fix: HTTPS issue with google fonts
+* Fix: Multi-colli printing
+* Fix: Delivery options tax in WC3.0
+* Fix: Disable 'signature on delivery' & 'recipient only' when switching to pickup location in checkout
+* Fix: Improve order-based calculation of highest shipping class
+
+= 2.2.0 (2017-04-03) =
+* WooCommerce 3.0 compatible
+* **Requires PHP version 5.3 or higher**
+* Feature: Validate NL postcodes
+* Fix: Multistep checkout
+* Fix: Email text translation typo
+* Fix: Remove spin button (arrows) for house number checkout field
+* Fix: Issues creating return shipments
+* Fix: Clear delivery options (&costs) when no longer available or deselected
+* Fix: Error exporting foreign addresses & PayPal Express checkout
+
+= 2.1.3 =
+* Feature: Option to autoload google fonts in delivery options
+* Feature: [DELIVERY_DATE] placeholder on label
+* Various minor fixes
+
+= 2.1.2 =
+* Fix: Script error on the Thank You page (interfered with Facebook/Google tracking)
+* Fix: Don't show delivery date (backend/emails) if delivery days window is 0 (=disabled)
+* Tweak: Notice for BE shop owners
+* Tweak: Sanity check for delivery options
+
+= 2.1.1 =
+* Fix: Delivery options iPad/iPhone issues
+* Fix: Ignore badly formatted delivery options data
+* Fix: Don't show delivery options when cart doesn't need shipping (downloads/virtual items)
+* Fix: Delivery options container not found (explicitly uses window scope)
+* Tweak: Shipping column width/float in order backend
+* Tweak: Page reloading & print dialogue flow optimizations
+
+= 2.1.0 =
+* Feature: Select combinations of Flat Rate & Shipping Class to link parcel settings & delivery options display
+* Feature: Option to show delivery options for all shipping methods (except foreign addresses)
+* Feature: Pick colors for the delivery options
+* Feature: Set custom styles (CSS) for delivery options
+* Feature: Enter '0' for the delivery days window to hide dates in the delivery options
+* Fix: Don't apply 'only recipient' fee for morning & night delivery (already included)
+* Fix: Order search issues
+* Fix: 404 header on delivery options
+* Tweak: Several delivery options style adjustments
+* Tweak: Reload page after exporting
+
+= 2.0.5 =
+* Fix default insurance selection
+* Tweak: Show shipping 'method title' instead of 'title' in settings (with fallback to title)
+* Tweak: added `$order` object to `wcmyparcel_email_text` filter
+
+= 2.0.4 =
+* Improved theme compatibility
+
+= 2.0.3 =
+* Fix: Checkout option fees tax
+* Fix: Settings page conditional options display
+* Improved settings migration from previous versions
+
+= 2.0.2 =
+* Fix order search
+* Default delivery options background to white
+
+= 2.0.1 =
+* Completely revamped settings & export interface
+* New delivery options replaces old 'Pakjegemak':
+	* Postponed delivery (pick a delivery date)
+	* Home address only option
+	* Signature on delivery option
+	* Evening or morning delivery option
+	* PostNL Pickup & Early PostNL Pickup
+	* Possibility to assign cost to the above delivery options
+* Create return labels from the WooCommerce backend
+* Uses new MyParcel API
+
+= 1.5.6 =
+* Fix: Disable pakjegemak if 'ship to different address' is disabled after selecting Pakjegemak location
+* Fix: Use billing postcode for Pakjegemak Track & Trace
+
+= 1.5.5 =
+* Fix: Foreign postcodes validation fix.
+
+= 1.5.4 =
+* Fix: Various Pakjegemak related issues (now saves & sends pakjegemak address separately to MyParcel)
+* Fix: Postcode validation issues with Portugal
+
+= 1.5.3 =
+* Feature: Edit MyParcel address fields on user profile page
+* Fix: Bug with automatic order completion
+
+= 1.5.2 =
+* Feature: Option to keep old consignments when re-exporting
+* Feature: Use billing name for pakjegemak (when empty)
+* Feature: store pakjegemak choice
+* Fix: prevent illegal export settings/combinations
+* Tweak: Better error reporting
+* Tweak: Small text changes (backend)
+
+= 1.5.1 =
+* Tweak: Added error when no consignments available when trying to print labels
+* Tweak: Tip for direct processing of labels (when not enabled)
+* Tweak: admin styles
+
+= 1.5.0 =
+* Feature: Shipment type setting (Pakket/Brievenbuspakje/Ongefrankeerd label)
+* Feature: Multi-colli support
+* Feature: More advanced insurance options
+* Feature: Allow overriding pakjegemak passdata file via child theme (place in /woocommerce/)
+* Fix: Backend address formatting/styles
+* Fix: Unexpected output at first activation
+* Tweak: Hide parcel settings for other shipment types
+* Tweak: Remove deprecated comments field
+* Tweak: Settings now under WooCommerce top menu
+* Tweak: better error logging
+* Dev: Code refactor
+
+= 1.4.6 =
+* Fix: Foreign Track & Trace link updated
+
+= 1.4.5 =
+* Tweak: Prevent label creation if direct processing is disabled. NOTE! If you had this setting disabled and were used to downloading the labels directly, you need to change this in the settings.
+* Tweak: Remove required tags in checkout for disabled fields.
+
+= 1.4.4 =
+* Fix: error for missing shipping fields
+
+= 1.4.3 =
+* Fix: WooCommerce 2.2+ compatibility
+
+= 1.4.2 =
+* Fix: weight unit is now properly taken into account
+* Tweak: different bulk action hook (for better compatibility)
+
+= 1.4.1 =
+* Fix: Broken special characters (ë, û, à etc.)
+* Tweak: different API communication mode for secure configuration
+
+= 1.4.0 =
+* Feature: Print order number on label
+* Feature: PakjeGemak integration
+* Feature: Option to autocomplete order after successful export to MyParcel
+* Feature: Option to display Track & Trace link on my account page
+
+= 1.3.8 =
+* Fix: Big exports now run without any warnings/problems (was limited by the server)
+* Fix: Names, cities etc. with quotes (')
+* Fix: Error on combined foreign & Dutch exports
+* Fix: IE9 compatibility
+
+= 1.3.7 =
+* Fix: Checkout placeholder data was being saved in older versions of Internet Explorer
+
+= 1.3.6 =
+* Feature: Option to download PDF or display in browser
+* Fix: warnings when debug set to true & downloading labels directly after exporting
+* Fix: WooCommerce 2.1 bug with copying foreign address data
+
+= 1.3.5 =
+* Fix: Errors when trashing & restoring trashed orders
+
+= 1.3.4 =
+* Fix: Errors on foreign country export
+* Fix: legacy address data is now also displayed properly
+* Tweak: background scrolling locked when exporting
+
+= 1.3.3 =
+* Fix: Checks for required fields
+* Tweak: Improved address formatting
+* Tweak: Removed placeholders on house number & suffix for better compatibility with old browsers
+
+= 1.3.2 =
+* Fix: Description labels for Custom ID ('Eigen kenmerk') & Message ('Optioneel bericht')
+
+= 1.3.1 =
+* Fix: button image width
+
+= 1.3.0 =
+* New MyParcel icons
+* Export & PDF buttons compatible with WC2.1 / MP6 styles
+* Button styles are now in CSS instead of inline
+
+= 1.2.0 =
+* Feature: The MyParcel checkout fields (street name / house number) can now also be modified on the my account page
+* Fix: WooCommerce 2.1 compatibility (checkout field localisation is now in WC core)
+* Updated MyParcel tariffs
+
+= 1.1.1 =
+* Fix: Labels for Custom id ('Eigen kenmerk') & Message ('Optioneel bericht') in the export window were reversed
+* Fix: Removed depricated functions for better WooCommerce 2.1 compatibility
+
+= 1.1.0 =
+* Made extra checkout fields exclusive for dutch customers.
+* Show process indicator during export.
+* Various bugfixes.
+
+= 1.0.0 =
+* First release.
+
 == Upgrade Notice ==
+= 2.1 =
+**Important!** Version 2.0 was a big update for this plugin, we recommend testing in a test environment first, before updating on a live site!
+
 = 4.0.0 =
 **Important!** Version 4.0.0 was a big update for this plugin, we recommend testing in a test environment first, before updating on a live site!

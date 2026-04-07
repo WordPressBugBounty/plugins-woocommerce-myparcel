@@ -1587,6 +1587,8 @@ class WCMP_Export
         MyParcelCollection  $collection,
         AbstractConsignment $consignment
     ): void {
+        $consignment = apply_filters('wc_myparcel_add_consignment', $consignment, $orderSettings);
+
         $colloAmount = $orderSettings->getColloAmount();
 
         if ($colloAmount > 1) {
@@ -1725,6 +1727,7 @@ class WCMP_Export
             $shipmentOptions->setLabelDescription($labelDescriptionFormat->getFormattedLabelDescription());
             $shipmentOptions->setHideSender($orderSettings->hasHideSender());
             $shipmentOptions->setExtraAssurance($orderSettings->hasExtraAssurance());
+            $shipmentOptions->setReceiptCode($orderSettings->hasReceiptCode());
 
             $order = (new Order())
                 ->setStatus($wcOrder->get_status())
