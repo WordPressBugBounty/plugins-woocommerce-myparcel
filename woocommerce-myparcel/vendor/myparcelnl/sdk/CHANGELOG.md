@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.25.1](https://github.com/myparcelnl/sdk/compare/v7.25.0...v7.25.1) (2025-03-18)
+
+
+### :bug: Bug Fixes
+
+* use sender for unrelated return ([#525](https://github.com/myparcelnl/sdk/issues/525)) ([a1e8279](https://github.com/myparcelnl/sdk/commit/a1e82790315093a9f0c730199744d707d3e24a6e))
+
+## [7.25.0](https://github.com/myparcelnl/sdk/compare/v7.24.0...v7.25.0) (2025-03-14)
+
+
+### :sparkles: New Features
+
+* allow delivery date to be used with DHLForYou ([#511](https://github.com/myparcelnl/sdk/issues/511)) ([2d4f6b8](https://github.com/myparcelnl/sdk/commit/2d4f6b83bbd8fa4709617dd7e992db3559fcc5ce))
+
+## [7.24.0](https://github.com/myparcelnl/sdk/compare/v7.23.0...v7.24.0) (2025-03-05)
+
+
+### :sparkles: New Features
+
+* support printerless return ([#524](https://github.com/myparcelnl/sdk/issues/524)) ([352de54](https://github.com/myparcelnl/sdk/commit/352de5488f37c510a8f60148748449541a97fce7))
+
+## [7.23.0](https://github.com/myparcelnl/sdk/compare/v7.22.1...v7.23.0) (2025-03-05)
+
+
+### :sparkles: New Features
+
+* support creating unrelated returns ([#523](https://github.com/myparcelnl/sdk/issues/523)) ([786d1a7](https://github.com/myparcelnl/sdk/commit/786d1a711f4d34bcbf29f8920d488251bfe7f835))
+
 ## [7.22.1](https://github.com/myparcelnl/sdk/compare/v7.22.0...v7.22.1) (2025-02-18)
 
 

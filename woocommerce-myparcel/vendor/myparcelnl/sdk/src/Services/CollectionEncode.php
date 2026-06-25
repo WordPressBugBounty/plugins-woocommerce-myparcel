@@ -31,17 +31,26 @@ class CollectionEncode
     /**
      * Encode multiple shipments so that the data can be sent to MyParcel.
      *
+     * @param  string $key default 'shipments', the key under 'data' in which the shipments will be returned
+     *
      * @return string
      * @throws \MyParcelNL\Sdk\src\Exception\MissingFieldException
      */
-    public function encode()
+    public function encode(string $key = 'shipments'): string
     {
         $data = [];
 
         $groupedConsignments = $this->groupMultiColloConsignments();
 
         foreach ($groupedConsignments as $consignments) {
-            $data['data']['shipments'][] = (new ConsignmentEncode($consignments))->apiEncode();
+            $consignment = (new ConsignmentEncode($consignments))->apiEncode();
+            // switch original recipient to sender for return shipments
+            if ('return_shipments' === $key) {
+                $consignment['sender'] = $consignment['recipient'];
+                // API does not allow state for sender
+                unset($consignment['recipient'], $consignment['sender']['state']);
+            }
+            $data['data'][$key][] = $consignment;
         }
 
         // Remove \\n because json_encode encode \\n for \s

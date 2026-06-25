@@ -52,7 +52,6 @@ class ConsignmentEncode
      *
      * @return array
      * @throws \MyParcelNL\Sdk\src\Exception\MissingFieldException
-     * @throws \Exception
      */
     public function apiEncode(): array
     {
@@ -95,6 +94,7 @@ class ConsignmentEncode
                     'same_day_delivery' => Helpers::intOrNull($consignment->isSameDayDelivery()),
                     'hide_sender'       => Helpers::intOrNull($consignment->hasHideSender()),
                     'extra_assurance'   => Helpers::intOrNull($consignment->hasExtraAssurance()),
+                    'printerless_return'=> Helpers::intOrNull($consignment->isPrinterlessReturn()),
                 ]),
             ]
         );
@@ -222,6 +222,7 @@ class ConsignmentEncode
     }
 
     /**
+     *
      * @return self
      */
     private function encodeStreet(): self

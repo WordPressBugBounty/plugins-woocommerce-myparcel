@@ -1,7 +1,7 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '4.25.0',
-        'version' => '4.25.0.0',
+        'pretty_version' => '4.25.1',
+        'version' => '4.25.1.0',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,17 +11,17 @@
     ),
     'versions' => array(
         'myparcelnl/sdk' => array(
-            'pretty_version' => '7.22.1',
-            'version' => '7.22.1.0',
+            'pretty_version' => '7.25.3',
+            'version' => '7.25.3.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../myparcelnl/sdk',
             'aliases' => array(),
-            'reference' => '0ff6a4bed0bd076986e80469bdb4e932e5820012',
+            'reference' => '058bdc8f566bfb1d7733d0a7cc981579802a7c84',
             'dev_requirement' => false,
         ),
         'myparcelnl/woocommerce' => array(
-            'pretty_version' => '4.25.0',
-            'version' => '4.25.0.0',
+            'pretty_version' => '4.25.1',
+            'version' => '4.25.1.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
